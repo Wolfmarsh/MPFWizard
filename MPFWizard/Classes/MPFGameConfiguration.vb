@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Text
 Imports YamlDotNet.Serialization
 Imports YamlDotNet.Serialization.NamingConventions
 
@@ -17,7 +18,7 @@ Public Class MPFGameConfiguration
         Try
             Using _MPFConfigYamlStream As New StreamReader(MPFConfigYamlPath)
                 Dim _Deserializer As New YamlDotNet.Serialization.Deserializer(namingConvention:=New UnderscoredNamingConvention)
-
+                _Deserializer.RegisterTagMapping("tag:yaml.org,2002:omap", GetType(List(Of System.Object)))
                 _MPFConfigExpando = _Deserializer.Deserialize(Of Dynamic.ExpandoObject)(_MPFConfigYamlStream)
             End Using
         Catch ex As Exception

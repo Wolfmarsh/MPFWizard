@@ -26,6 +26,7 @@ Partial Class MainForm
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PreferencesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -40,7 +41,7 @@ Partial Class MainForm
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreferencesToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenGameToolStripMenuItem, Me.PreferencesToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -56,6 +57,12 @@ Partial Class MainForm
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'OpenGameToolStripMenuItem
+        '
+        Me.OpenGameToolStripMenuItem.Name = "OpenGameToolStripMenuItem"
+        Me.OpenGameToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenGameToolStripMenuItem.Text = "Open Game"
         '
         'MainForm
         '
@@ -77,4 +84,5 @@ Partial Class MainForm
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PreferencesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenGameToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -7,8 +7,12 @@
             Return _MPFBaseDirectory
         End Get
         Set(value As String)
-            If Not (value.EndsWith("\") Or value.EndsWith("/")) Then
-                _MPFBaseDirectory = value & "\"
+            If value IsNot Nothing Then
+                If Not (value.EndsWith("\") Or value.EndsWith("/")) Then
+                    _MPFBaseDirectory = value & "\"
+                Else
+                    _MPFBaseDirectory = value
+                End If
             Else
                 _MPFBaseDirectory = value
             End If
