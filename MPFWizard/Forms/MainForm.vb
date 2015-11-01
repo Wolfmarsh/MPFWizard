@@ -56,6 +56,11 @@
                     Exit Sub
                 End Try
             End If
+
+            Dim _BrowserForm As New MPFConfigSectionBrowserForm
+            _BrowserForm.RootConfigSection = _CurrentGame.GameConfiguration.MPFConfig
+            _BrowserForm.ShowDialog()
+
         End If
     End Sub
 End Class

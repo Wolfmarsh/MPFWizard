@@ -93,6 +93,12 @@
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\MPFConfigSectionBrowserForm.Designer.vb">
+      <DependentUpon>MPFConfigSectionBrowserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MPFConfigSectionBrowserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\PreferencesForm.Designer.vb">
       <DependentUpon>PreferencesForm.vb</DependentUpon>
     </Compile>
@@ -118,6 +124,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MPFConfigSectionBrowserForm.resx">
+      <DependentUpon>MPFConfigSectionBrowserForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PreferencesForm.resx">
       <DependentUpon>PreferencesForm.vb</DependentUpon>

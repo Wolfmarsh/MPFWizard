@@ -1,6 +1,7 @@
 ﻿Public Class MPFGame
-    Dim _GameConfiguration As MPFGameConfiguration
     Dim _MPFBaseDirectory As String
+
+    Public Property GameConfiguration As MPFGameConfiguration
 
     Public Property MPFBaseDirectory As String
         Get
